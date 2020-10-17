@@ -1,0 +1,639 @@
+html, body{
+	overflow-x: hidden;
+}
+ /*============================= Шапка ====================================*/
+section#head{
+	background-color: #fff;
+	margin-top: 30px;
+	margin-bottom: 66px;
+}
+section#head p{
+	margin: 10px 0px 10px;
+	font-size: 20px;
+}
+.info a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.info{
+	padding-left: 70px;
+	text-align: left;
+}
+.logo-1{
+	text-align: right;
+}
+/*============================= Навигация ====================================*/
+nav{
+   background-color: #026092;
+   top: 245px; /*высота шапки в пикселях*/
+   position: fixed;
+   z-index: 100;
+   width: 100%;
+}
+ul.list-inline{
+margin-bottom: 0px;
+}
+ul.list-inline a{
+	font-size: 18px;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 40px 15px;
+	color: #fff;
+}
+ul.list-inline a:hover{
+	text-decoration: none;
+	background-color: #383a3c;
+}
+/*============================= Решение по упаковке ====================================*/
+section#decision{
+	background-color: #dedede;
+}
+section#decision img{
+	width: 570px;
+}
+section#decision h2{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+section#decision h3{
+	margin-top: 0px;
+}
+.vacuum{
+	color: #fff;
+	background-color: #026092;
+	padding: 40px 0px 60px;
+	border-radius: 30px;
+}
+.termo{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.tara{
+	color: #fff;
+	background-color: #026092;
+	padding: 40px 0px 60px;
+	border-radius: 30px;
+}
+/*============================= Услуги ====================================*/
+section#services{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+section#services h2{
+	margin-bottom: 30px;
+}
+section#services ul{
+	text-align: left;
+}
+.servis img{
+	width: 350px;
+}
+.servis{
+	height: 565px;
+	border: solid 5px #026092;
+}
+/*============================= Наши работы ====================================*/
+section#works{
+	background-color: #dedede;
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+.works h2{
+	margin-bottom: 20px;
+}
+.more p{
+	margin-top: 35px;
+	font-size: 25px;
+}
+/*============================= Контакты ====================================*/
+section#contacts{
+	background: url(../img/contacts_bg.jpg);
+	height: 600px;
+}
+section#contacts h4{
+	color: #383a3c;
+}
+.contacts_header h2{
+	margin-top: 55px;
+	margin-bottom: 40px;
+	color: #026092;
+}
+.form{
+	border: solid 3px #026092;
+	border-radius: 25px; 
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.data input{
+	margin-bottom: 22px;
+	padding: 15px 40px;
+	border-radius: 8px;
+	border: solid;
+	border-color: #026092;
+}
+textarea{
+	border-radius: 8px;
+	border: solid;
+	border-color: #026092;
+	width: 100%;
+}
+button{												
+	margin-top: 5%;
+	border: none;
+	border-radius: 5px;
+	background-color: #026092;
+	padding: 17px 146px;
+	color: #fff;
+}
+
+button:hover{
+background-color: #16c7d2;	
+color: #fff;
+outline: none;
+}
+
+/*============================= кнопка звонка ====================================*/
+/*кнопка звонка*/
+
+.callback-bt {
+        background:#38a3fd;
+        border:2px solid #38a3fd;
+        border-radius:50%;
+        box-shadow:0 8px 10px rgba(56,163,253,0.3);
+        cursor:pointer;
+        height:68px;
+        text-align:center;
+        width:68px;
+        position: fixed;
+        left: 5%;
+        bottom: 7%;
+        z-index:999;
+        transition:.3s;
+        -webkit-animation:hoverWave linear 1s infinite;
+        animation:hoverWave linear 1s infinite;
+}
+
+.callback-bt .text-call{
+        height:68px;
+        width:68px;        
+        border-radius:50%;
+        position:relative;
+        overflow:hidden;
+}
+
+.callback-bt .text-call span {
+    text-align: center;
+    color:#38a3fd;
+    opacity: 0;
+    font-size: 0;
+        position:absolute;
+        right: 9px;
+        top: 20px;
+    line-height: 14px;
+        font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.callback-bt .text-call:hover span {
+    opacity: 1;
+        font-size: 11px;
+}
+.callback-bt:hover i {
+    display:none;
+}
+
+.callback-bt:hover {
+        z-index:1;
+        background:#fff;
+        color:transparent;
+        transition:.3s;
+}
+.callback-bt:hover i {
+        color:#38a3fd;
+        font-size:40px;
+        transition:.3s;
+}
+.callback-bt i {
+        color:#fff;
+        font-size:34px;
+        transition:.3s;
+        line-height: 66px;transition: .5s ease-in-out;
+}
+
+@-webkit-keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}@keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}
+
+/* animations icon */
+
+@keyframes shake {
+0% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+10% {
+    transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        -webkit-transform: rotateZ(-30deg);
+}
+20% {
+    transform: rotateZ(15deg);
+        -ms-transform: rotateZ(15deg);
+        -webkit-transform: rotateZ(15deg);
+}
+30% {
+    transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+}
+40% {
+    transform: rotateZ(7.5deg);
+        -ms-transform: rotateZ(7.5deg);
+        -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+    transform: rotateZ(-6deg);
+        -ms-transform: rotateZ(-6deg);
+        -webkit-transform: rotateZ(-6deg);
+}
+60% {
+    transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        -webkit-transform: rotateZ(5deg);
+}
+70% {
+    transform: rotateZ(-4.28571deg);
+        -ms-transform: rotateZ(-4.28571deg);
+        -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+    transform: rotateZ(3.75deg);
+        -ms-transform: rotateZ(3.75deg);
+        -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+    transform: rotateZ(-3.33333deg);
+        -ms-transform: rotateZ(-3.33333deg);
+        -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+}
+
+@-webkit-keyframes shake {
+0% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+10% {
+    transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        -webkit-transform: rotateZ(-30deg);
+}
+20% {
+    transform: rotateZ(15deg);
+        -ms-transform: rotateZ(15deg);
+        -webkit-transform: rotateZ(15deg);
+}
+30% {
+    transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+}
+40% {
+    transform: rotateZ(7.5deg);
+        -ms-transform: rotateZ(7.5deg);
+        -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+    transform: rotateZ(-6deg);
+        -ms-transform: rotateZ(-6deg);
+        -webkit-transform: rotateZ(-6deg);
+}
+60% {
+    transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        -webkit-transform: rotateZ(5deg);
+}
+70% {
+    transform: rotateZ(-4.28571deg);
+        -ms-transform: rotateZ(-4.28571deg);
+        -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+    transform: rotateZ(3.75deg);
+        -ms-transform: rotateZ(3.75deg);
+        -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+    transform: rotateZ(-3.33333deg);
+        -ms-transform: rotateZ(-3.33333deg);
+        -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+}
+/* конец кнопки звонка */
+
+
+
+
+/*============================= Адаптив ====================================*/
+/*============================= Адаптив ====================================*/
+/*============================= Адаптив ====================================*/
+
+@media(min-width: 0px) and (max-width: 320px){
+	section#head{
+		margin-bottom: 15px;
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.logo-1 img{
+		width: 270px;	
+	}
+	.logo-2 img{
+		width: 270px;
+	}
+	section#head p{
+		margin: 10px 0px 10px;
+		font-size: 18px;
+	}
+	.info{
+		text-align: center;
+		padding-left: 50px;
+	}
+	.info a{
+		font-size: 18px;
+	}
+	/*============================= Навигация ====================================*/	
+	ul.list-inline a{
+		font-size: 9px;
+		padding: 10px 10px 10px;
+	}
+	/*============================ Решение по упаковке =============================*/
+	section#decision h2{
+		font-size: 18px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	section#decision img{
+		width: 100%;
+	}
+	/*============================= Услуги ====================================*/
+	section#services{
+		padding-top: 0;
+	}
+	section#services h2{
+		font-size: 18px;
+	}
+	.servis img{
+		width: 100%;
+	}
+	.servis{
+		height: 100%;
+		margin-top: 15px;
+	}
+	/*============================= Наши работы ====================================*/
+	.fotorama__nav-wrap{
+		display: none;
+	}
+	/*============================= Контакты ====================================*/
+	section#contacts{
+		height: 750px;
+	}
+	.contacts_header h2{
+		color: #fff;
+		margin-top: 55px;
+		margin-bottom: 40px;
+	}
+	.form{
+		background: rgba(255,255,255,0.5);
+		padding-top: 40px;
+		padding-bottom: 35px;
+	}
+	.data input{
+		margin-bottom: 22px;
+		padding: 17px 40px;
+	}
+	.coments input{
+		width: 350px;
+		height: 230px;
+	}
+	button{												
+		margin-top: 5%;
+		padding: 17px 95px;
+	}
+	.data{
+		margin-top: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 321px) and (max-width: 480px){
+	section#head{
+		margin-bottom: 15px;
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.logo-1 img{
+		width: 270px;	
+	}
+	.logo-2 img{
+		width: 270px;
+	}
+	section#head p{
+		margin: 10px 0px 10px;
+		font-size: 18px;
+	}
+	.info{
+		text-align: center;
+		padding-left: 50px;
+	}
+	.info a{
+		font-size: 18px;
+	}
+	/*============================= Навигация ====================================*/	
+	ul.list-inline a{
+		font-size: 9px;
+		padding: 10px 10px 10px;
+	}
+	/*============================ Решение по упаковке =============================*/
+	section#decision h2{
+		font-size: 18px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	section#decision img{
+		width: 100%;
+	}
+	/*============================= Услуги ====================================*/
+	section#services{
+		padding-top: 0;
+	}
+	section#services h2{
+		font-size: 18px;
+	}
+	.servis img{
+		width: 100%;
+	}
+	.servis{
+		height: 100%;
+		margin-top: 15px;
+	}
+	/*============================= Наши работы ====================================*/
+	.fotorama__nav-wrap{
+		display: none;
+	}
+	/*============================= Контакты ====================================*/
+	section#contacts{
+		height: 750px;
+	}
+	.contacts_header h2{
+		color: #fff;
+		margin-top: 55px;
+		margin-bottom: 40px;
+	}
+	.form{
+		background: rgba(255,255,255,0.5);
+		padding-top: 40px;
+		padding-bottom: 35px;
+	}
+	.data input{
+		margin-bottom: 22px;
+		padding: 17px 40px;
+	}
+	.coments input{
+		width: 350px;
+		height: 230px;
+	}
+	button{												
+		margin-top: 5%;
+		padding: 17px 95px;
+	}
+	.data{
+		margin-top: 15px;
+	}
+}
+
+
+
+@media(min-width: 481px) and (max-width: 767px){
+	section#head{
+		margin-bottom: 15px;
+	}
+	.info{
+		text-align: center;
+	}
+	.servis img{
+		width: 100%;
+	}
+	.servis{
+		height: 100%;
+		margin-top: 15px;
+	}
+	section#decision img{
+		width: 100%;
+	}
+}
+
+
+
+@media(min-width: 768px) and (max-width: 991px){
+	section#head{
+		margin-bottom: 20px;
+	}
+	nav{
+		display: none;
+	}
+	.info{
+		text-align: center;
+	}
+	.servis img{
+		width: 100%;
+	}
+	.servis{
+		height: 100%;
+		margin-top: 15px;
+	}
+	section#decision img{
+		width: 100%;
+	}
+}
+	
+
+
+
+
+@media(min-width: 992px) and (max-width: 1200px){
+	.logo-2 img{
+		width: 350px;
+	}
+	section#head{
+		margin-bottom: 59px;
+	}
+	section#decision img{
+		width: 100%;
+	}
+	.servis img{
+		width: 100%;
+	}
+	.data input{
+	margin-bottom: 22px;
+	padding: 16px 30px;
+	}
+	button{												
+	margin-top: 10%;
+	padding: 15px 113px;
+	}
+}
+
+
+@media(min-width: 1201px) and (max-width: 1400px){
+	section#head{
+		margin-bottom: 59px;
+	}
+}

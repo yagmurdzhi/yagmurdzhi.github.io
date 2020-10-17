@@ -1,0 +1,191 @@
+html, body{
+	overflow-x: hidden;
+}
+body{
+	background: url(../img/thanks.jpg) no-repeat center center;
+}
+/*============================= Шапка ====================================*/
+section#head p{
+	margin: 10px 0px 10px;
+	font-size: 20px;
+}
+.info a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.info{
+	padding-left: 70px;
+	text-align: left;
+}
+.logo-1{
+	text-align: right;
+}
+	
+/*============================= Логотип компании ==================================*/
+section#main{
+	height: 650px;
+}
+/*============================= Загооловок ====================================*/
+.header{
+	margin-top: 150px;
+	color: #026092;
+	text-transform: uppercase;
+}
+.header h2{
+	margin: 20px 250px;
+    padding: 20px;
+    border: solid;
+    border-color: #026092;
+    background-color: #383a3c;
+}
+
+
+@media(min-width: 0px) and (max-width: 320px){
+	section#main{
+	height: 100%;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.logo-1 img{
+		width: 270px;	
+	}
+	.logo-2 img{
+		width: 270px;
+	}
+	section#head p{
+		margin: 10px 0px 10px;
+		font-size: 18px;
+	}
+	.info{
+		text-align: center;
+	}
+	.info a{
+		font-size: 18px;
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 16px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	h4{
+		font-size: 14px;
+	}
+}	
+@media(min-width: 321px) and (max-width: 480px){
+	section#main{
+	height: 100%;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.logo-1 img{
+		width: 270px;	
+	}
+	.logo-2 img{
+		width: 270px;
+	}
+	section#head p{
+		margin: 10px 0px 10px;
+		font-size: 18px;
+	}
+	.info{
+		text-align: center;
+	}
+	.info a{
+		font-size: 18px;
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 22px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 16px;
+	}
+}	
+
+@media(min-width: 481px) and (max-width: 768px){
+	section#main{
+	height: 100%;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.logo-1 img{
+		width: 270px;	
+	}
+	.logo-2 img{
+		width: 270px;
+	}
+	section#head p{
+		margin: 10px 0px 10px;
+		font-size: 18px;
+	}
+	.info{
+		text-align: center;
+	}
+	.info a{
+		font-size: 18px;
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 22px;
+	}
+	h4{
+		font-size: 18px;
+	}
+}
+
+@media(min-width: 769px) and (max-width: 992px){
+	section#main{
+	height: 100%;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.logo-1{
+		text-align: center;
+	}
+	.info{
+		text-align: center;
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+}
