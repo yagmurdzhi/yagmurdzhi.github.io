@@ -2,7 +2,7 @@
 
 Работы из моего портфолио
 
-[Ссылка на Git с работами](https://yagmurdzhi.github.io)
+[Ссылка на Git с работами](https://yagmurdzhi.github.io/Розы/)
 
 [Сайт по такелажным работам](https://drive.google.com/drive/folders/1AX3kexmlgHhdbRiblJWfGoVIvfaC9-lY?usp=sharing)
 
