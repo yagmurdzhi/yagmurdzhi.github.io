@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hostel</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- Main -->
+    <section id="main">
+      <div class="container">
+      <!-- Шапка -->
+        <div class="row">
+          <div class="col-md-4 col-xs-6 logo">
+          <div class="row">
+            <img id="logo" src="img/logo1.png" alt="Логотип">
+          </div>
+            <div class="row icon">
+              <a href="https://ru.linkedin.com"><img src="img/in.png" alt="In"></a>
+              <a href="https://vk.com/id82505540"><img src="img/vk.png" alt="Vk"></a>
+              <a href="https://ok.ru"><img src="img/odnoklasniki.png" alt="Odnoklasniki"></a>
+              <a href="https://www.youtube.com/channel/UC_oVwZiYc7kHf_IgOcrOShA"><img src="img/YouTube.png" alt="YouTube"></a>
+              <a href="https://www.instagram.com/natalia_chubarova"><img src="img/insta.png" alt="Instagrame"></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 logo-revizorro text-center">
+            <img src="img/logo2.png" alt="Логотип ревизорро">
+          </div>
+          <div class="col-md-4 col-xs-12 phon text-right">
+            <h3>8 (4212) 788-033</h3>
+            <p>(Круглосуточно)</p>
+          </div>
+        </div>
+        <!-- Шапка -->
+        <!-- Главный заголовок -->
+        <div class="row header wow pulse text-center">
+        <h1>Европейский хостел <br> в центре Хабаровска</h1>
+        </div>
+         <!-- Главный заголовок -->
+         <!-- Форма -->
+         <div class="row">
+           <div class="main-form">
+             <div class="row header-form text-center">
+               <h2>Забронируйте номер сейчас!</h2>
+             </div>
+             <div class="row text-center">
+               <form action="send.php" method="post">
+                 <div class="col-md-3">
+                   <input type="text" name="name" placeholder="Ваше имя">
+                 </div>
+                 <div class="col-md-3">
+                   <input type="text" name="phone" placeholder="Ваш телефон">
+                 </div>
+                 <div class="col-md-3">
+                   <input type="text" name="email" placeholder="Ваш email">
+                 </div>
+                 <div class="col-md-3">
+                   <button class="btn" type="submit">Забронировать</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+      </div>
+    </section>
+  <!-- Main -->
+
+  <!-- ЯЙЦА -->
+     <section id="eggs">
+     <div class="container">
+      <div class="eggs-header text-center ">
+        <h2>При бронировании номера на сайте трансфер БЕСПЛАТНО!</h2>
+      </div>
+      <div class="row icons text-center">
+        <div class="col-sm-2 wow fadeInDown col-xs-6" data-wow-delay="0.2s">
+          <img src="img/parking.png" alt="Бесплатная парковка">
+          <h4>Бесплатная парковка</h4>
+        </div>
+        <div class="col-sm-2 wow fadeInUp col-xs-6" data-wow-delay="0.4s">
+          <img src="img/wifi.png" alt="Бесплатный WI-FI">
+          <h4>Бесплатный WI-FI</h4>
+        </div>
+        <div class="col-sm-2 wow fadeInDown col-xs-6" data-wow-delay="0.6s">
+          <img src="img/24h.png" alt="Доступ 24 часа">
+          <h4>Доступ 24 часа</h4>
+        </div>
+        <div class="col-sm-2 wow fadeInUp col-xs-6" data-wow-delay="0.8s">
+          <img src="img/kitchen.png" alt="Оборудованная кухня">
+          <h4>Оборудованная кухня</h4>
+        </div>
+        <div class="col-sm-2 wow fadeInDown col-xs-6" data-wow-delay="1s">
+          <img src="img/clean.png" alt="Уборка номеов">
+          <h4>Уборка номеов</h4>
+        </div>
+        <div class="col-sm-2 wow fadeInUp col-xs-6" data-wow-delay="1.2s">
+          <img src="img/air.png" alt="Такси до Аэропорта">
+          <h4>Такси до Аэропорта</h4>
+        </div>
+      </div>
+      </div>
+     </section>
+  <!-- ЯЙЦА -->
+
+<!-- Price -->
+  <section id="price">
+  <div class="container">
+  <hr>
+    <div class="row text-center header">
+      <h2>Цены и описания номеров</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-3">
+      <div class="card">
+        <h3>Семейный номер «Purple»</h3>
+        <img src="img/purple.jpg" alt="Семейный номер «Purple»">
+        <h4>1800 руб. на 2 чел.+650 руб.доп.чел.</h4>
+        <ul class="text-left">
+          <li>Площадь: 18 кв. м</li>
+          <li>Спальных мест - 4</li>
+          <li>Общая: ванна, кухня</li>
+          <li>Шкаф, ТВ, WI-FI.</li>
+        </ul>
+        <button data-toggle="modal" href="#modal-1">Забронировать</button>
+      </div>
+      </div>
+      <div class="col-md-3">
+      <div class="card">
+        <h3>Семейный номер «Peach»</h3>
+        <img src="img/peach.jpg" alt="Семейный номер «Peach»">
+        <h4>1800 руб. на 2 чел.+650 руб.доп.чел.</h4>
+        <ul class="text-left">
+          <li>Площадь: 23 кв. м</li>
+          <li>Спальных мест - 4</li>
+          <li>Общая: ванна, кухня</li>
+          <li>Шкаф, ТВ, WI-FI.</li>
+        </ul>
+        <button data-toggle="modal" href="#modal-2">Забронировать</button>
+      </div>
+      </div>
+       <div class="col-md-3 min">
+      <div class="card">
+        <h3>6-местный "Мужской" номер</h3>
+        <img src="img/man.jpg" alt="3-местный номер «Coral»">
+        <h4>650 руб./место</h4>
+        <ul class="text-left">
+          <li>Площадь: 18 кв. м</li>
+          <li>Кровать: двуярусная -3</li>
+          <li>Общая: ванна, кухня, <br> гостиная</li>
+        </ul>
+        <button data-toggle="modal" href="#modal-3">Забронировать</button>
+      </div>
+      </div> 
+      <div class="col-md-3 min">
+      <div class="card">
+        <h3>3-местный номер «Coral»</h3>
+        <img src="img/coral.jpg" alt="3-местный номер «Coral»">
+        <h4>790 руб./место</h4>
+        <ul class="text-left">
+          <li>Площадь: 18 кв. м</li>
+          <li>Кровать: двуярусная -3</li>
+          <li>Общая: ванна, кухня, <br> гостиная</li>
+        </ul>
+        <button data-toggle="modal" href="#modal-4">Забронировать</button>
+      </div>
+      </div> 
+    </div>
+    </div>
+  </section>
+<!-- Price -->
+
+<!-- Footer -->
+
+  <section id="footer">
+    <div class="container">
+       <div class="row">
+           <div class="form-footer">
+             <div class="row text-center header-form">
+               <h2>Забронируйте номер сейчас!</h2>
+             </div>
+             <div class="row text-center">
+               <form action="">
+                 <div class="col-md-3">
+                    <input type="text" placeholder="Ваше имя">
+                 </div>
+                 <div class="col-md-3">
+                   <input type="text" placeholder="Ваш телефон">
+                 </div>
+                 <div class="col-md-3">
+                   <input type="text" placeholder="Ваш email">
+                 </div>
+                 <div class="col-md-3">
+                   <button class="btn">Забронировать</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+    </div>
+  </section>
+<!-- Footer -->
+
+
+<!-- modal windows -->
+  <!-- MW -->
+        <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Семейный номер «Purple»</h4>
+            </div>
+            <div class="modal-body">
+                  <div class="row text-center">
+                     <form action="">
+                       <div class="col-md-4">
+                          <input type="text" placeholder="Ваше имя">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш телефон">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш email">
+                       </div>
+                     </form>
+                   </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Семейный номер «Peach»</h4>
+            </div>
+            <div class="modal-body">
+                    <div class="row text-center">
+                     <form action="">
+                       <div class="col-md-4">
+                          <input type="text" placeholder="Ваше имя">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш телефон">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш email">
+                       </div>
+                     </form>
+                   </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">6-местный "Мужской" номер</h4>
+            </div>
+            <div class="modal-body">
+                  <div class="row text-center">
+                     <form action="">
+                       <div class="col-md-4">
+                          <input type="text" placeholder="Ваше имя">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш телефон">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш email">
+                       </div>
+                     </form>
+                   </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">3-местный номер «Coral»</h4>
+            </div>
+            <div class="modal-body">
+                  <div class="row text-center">
+                     <form action="">
+                       <div class="col-md-4">
+                          <input type="text" placeholder="Ваше имя">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш телефон">
+                       </div>
+                       <div class="col-md-4">
+                         <input type="text" placeholder="Ваш email">
+                       </div>
+                     </form>
+                   </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- MW -->
+<!-- modal windows -->
+
+
+ 
+<section id="feedback">
+  <div class="container">
+    <div class="row text-center">
+      <h2>Отзывы</h2>
+    </div>
+    <div class="row">
+            <!-- Карусель -->
+      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+        <!-- Индикаторы для карусели -->
+        <ol class="carousel-indicators">
+          <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Слайды карусели -->
+        <div class="carousel-inner">
+          <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+          <div class="active item">
+            <h2>Слайд №1</h2>
+            <div class="carousel-caption">
+              <h3>Заголовок 1 слайда</h3>
+              <p>Текст (описание) 1 слайда...</p>
+            </div>
+          </div>
+          <!-- Слайд №2 -->
+          <div class="item">
+            <h2>Slide 2</h2>
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+            </div>
+          </div>
+          <!-- Слайд №3 -->
+          <div class="item">
+            <h2>Slide 3</h2>
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Навигация для карусели -->
+        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+     new WOW().init(); 
+    </script>
+
+  </body>  
+</html>
