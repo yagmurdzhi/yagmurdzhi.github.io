@@ -1,0 +1,112 @@
+html, body{
+	overflow-x: hidden;
+}
+body{
+	height: 80vh;
+	background: url(../img/thanks.jpg) no-repeat center center;
+}
+/*============================= Загооловок ====================================*/
+.header{
+	text-align: center !important;
+	margin-top: 150px;
+	color: #f2a1a8;
+	text-transform: uppercase;
+}
+.header h2{
+    padding: 20px;
+    border: solid;
+    border-color: #f2a1a8;
+    background-color: #f0ebf1;
+}
+.header a{
+	text-decoration: none;
+}
+.header a:hover{
+	color: #f2a1a8;
+}
+@media(min-width: 0px) and (max-width: 320px){
+	body{
+	background: url(../img/bg_mobile.jpg) no-repeat center center;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 16px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	h4{
+		font-size: 14px;
+	}
+}	
+@media(min-width: 321px) and (max-width: 480px){
+	body{
+	background: url(../img/bg_mobile.jpg) no-repeat center center;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 22px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 16px;
+	}
+}	
+
+@media(min-width: 481px) and (max-width: 768px){
+	body{
+	background: url(../img/bg_mobile.jpg) no-repeat center center;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+	/*============================= Загооловок ====================================*/
+	h1{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 22px;
+	}
+	h4{
+		font-size: 18px;
+	}
+}
+
+@media(min-width: 769px) and (max-width: 992px){
+	body{
+	background: url(../img/bg_mobile.jpg) no-repeat center center;
+	}
+	.header{
+	margin-top: 50px
+	}
+	.header h2{
+		margin: 0px 0px;
+	}
+}
