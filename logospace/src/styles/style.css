@@ -1,0 +1,1787 @@
+/*****************header*************/
+input#mob-menu {
+    display: none;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 1s;
+}
+header.sticky {
+      position: fixed;
+      background-color: #8c6fe9;
+      border-bottom: 2px solid #fdeb9f;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 23%;
+    min-width: 150px;
+    transition: 1s;
+}
+header.sticky .logo {
+      width: 150px;
+    }
+.menu{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.menu-item{
+    list-style: none;
+}
+.menu-link{
+    text-decoration: none;
+    color: #fdeb9f;
+    font-size: medium;
+    font-weight: 600;
+}
+.menu-link:hover{
+    color: #fff;
+}
+.social{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-logo{
+    width: 70%;
+}
+header.sticky .social{
+    display: none;
+}
+.baner-text{
+    background-image: url(../img/header-baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    z-index: 10;
+    font-size: 50px;
+}
+.main-subtitle{
+    color: #fdeb9f;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+/*****************category*************/
+.category{
+    padding: 20px 0 30px;
+}
+.category-header{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0 30px;
+    color: #8c6fe9;
+}
+.category-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.category-item{
+    width: 30%;
+}
+.category-img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 30px;
+}
+.category-img-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.category-img-link:hover .category-img {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+.category-name{
+    text-align: center;
+    color: #8c6fe9;
+}
+.category-name:hover{
+    color:#9919cf
+}
+.all-games-btn{
+    display: flex;
+    justify-content: center;
+}
+.all-games-link{
+    display: inline-block;
+    border: 2px solid #8c6fe9;
+    border-radius: 20px;
+    padding: 15px 70px;
+    margin: 20px 0;
+    color: #8c6fe9;
+    font-size: 20px;
+    font-weight: 700;
+}
+.all-games-link:hover{
+    border: 2px solid #9919cf;
+    color: #9919cf;
+}
+/*****************advantages*************/
+.advantages{
+    background-color: #fdeb9f;
+    padding: 20px 0 35px;
+}
+.advantages-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages-header-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #8c6fe9;
+}
+.advantages-header-subtitle{
+    font-size: 20px;
+    color: #8c6fe9;
+    border-bottom: 2px solid #8c6fe9;
+    padding: 0 20px 15px 20px;
+}
+.advantages-list{
+    padding: 0;
+}
+.advantages-item{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.advantages-img{
+    width: 150px;
+    height: 150px;
+}
+.advantages-item-content{
+    margin-left: 30px;
+}
+.advantages-item-title{
+    color: #8c6fe9;
+}
+.advantages-item-text{
+    color: #444;
+}
+/*****************blog*************/
+.blog{
+    padding: 20px 0 30px;
+}
+.blog-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-header-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #8c6fe9;
+}
+.blog-header-subtitle{
+    font-size: 20px;
+    border-bottom: 2px solid #8c6fe9;
+    padding: 0 20px 15px 20px;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.articles-item{
+    width: 30%;
+}
+.articles-img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 30px;
+}
+.articles-img-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.articles-img-link:hover .articles-img {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+.articles-name{
+    text-align: center;
+    color: #8c6fe9;
+}
+.articles-name:hover{
+    color: #9919cf;
+}
+.all-articles-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.all-articles-link{
+    display: inline-block;
+    border: 2px solid #8c6fe9;
+    border-radius: 20px;
+    padding: 15px 70px;
+    margin: 20px 0;
+    color: #8c6fe9;
+    font-size: 20px;
+    font-weight: 700;
+}
+.all-articles-link:hover{
+    border: 2px solid #9919cf;
+    color: #9919cf;
+}
+/*****************reviews*************/
+
+.reviews {
+  padding: 20px 20px;
+  background: #8c6fe9;
+}
+.reviews-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.reviews-header-title {
+    text-transform: uppercase;
+    color: #fdeb9f;
+}
+.reviews-header-subtitle{
+    font-size: 20px;
+    color: #fdeb9f;
+    border-bottom: 2px solid #fdeb9f;
+    padding: 0 20px 15px 20px;
+}
+
+.slider {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 33.3333%;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.1);
+}
+
+.review-text {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.review-author span{
+  color: #fdeb9f;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.slider-controls {
+  margin-top: 20px;
+  display: flex;justify-content: space-around;
+}
+
+.slider-controls button {
+  color: #fdeb9f;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 45px;
+  transition: 0.3s;
+}
+/*****************site-description*************/
+.site-description{
+    padding: 30px 0;
+}
+.site-description-header{
+    color: #8c6fe9;
+}
+.site-description a{
+    color: #9919cf;
+}
+
+/*****************footer*************/
+footer{
+    background-color: #8c6fe9;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.footer-logo{
+    width: 300px;
+}
+.footer-menu-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.footer-menu-item{
+    list-style: none;
+}
+.footer-menu-link{
+    color: #fff;
+}
+.footer-menu-link:hover{
+    color: #9919cf;
+}
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts-link{
+    margin: 5px 0;
+    color: #fff;
+}
+.footer-social{
+    display: flex;
+    align-items: center;;
+    margin-top: 10px;
+}
+.footer-social-logo{
+    width: 30px;
+    margin-right: 20px;
+}
+.footer-privacy-policy{
+    display: flex;
+    flex-direction: column;
+}
+.footer-privacy-policy-link{
+    color: #fff;
+    margin: 10px 0;
+}
+
+/*************************************************Games********************************************************/
+.games-baner-text-content{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.games-main-title{
+    color: #fdeb9f;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.games-main-subtitle{
+    color: #fdeb9f;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+.games-baner-text{
+    background-image: url(../img/games-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/******************Games content****************/
+.games-page-wrapper{
+    display: flex;
+}
+.sidebar{
+    max-width: 30%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.sidebar-content{
+    position: sticky;
+    top: 80px;
+    background-color: #8c6fe9;
+    padding: 5px 15px 20px 35px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.sidebar-header{
+    text-transform: uppercase;
+    color: #fdeb9f;
+    margin-left: -15px;
+}
+.sidebar-category-list{
+    padding: 0;
+}
+.sidebar-category-item::marker{
+    color: #fdeb9f;
+}
+.sidebar-category-link{
+    color: #fdeb9f;
+}
+.sidebar-category-link:hover{
+    color: #9919cf;
+}
+.mob-sidebar{
+    display: none;
+    width: 100%;
+    position: sticky;
+    top: 70px;
+    z-index: 10;
+    height: 70px;
+    overflow: hidden;
+    transition: 1s;
+}
+.mob-sidebar.active{
+    height: 40vh;
+    transition: 1s;
+    overflow-y: scroll;
+}
+.mob-sidebar-content{
+    background-color: #8c6fe9;
+    padding: 5px 0px 20px 35px;
+}
+.mob-sidebar-header{
+    text-transform: uppercase;
+    color: #fdeb9f;
+    margin-left: -15px;
+}
+.mob-sidebar-category-list{
+    padding: 0;
+}
+.mob-sidebar-category-item::marker{
+    color: #fdeb9f;
+}
+.mob-sidebar-category-link{
+    color: #fdeb9f;
+}
+.mob-sidebar-category-link:hover{
+    color: #9919cf;
+}
+.games{
+    max-width: 70%;
+    width: 100%;
+    padding: 20px 25px;
+}
+.games-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.games-item{
+    width: 30%;
+    margin-top: 20px;
+}
+.games-img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 30px;
+}
+.games-img-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.games-img-link:hover .games-img {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+.games-name{
+    text-align: center;
+    color: #8c6fe9;
+    margin: 20px 0 5px;
+}
+.game-tag{
+    white-space: nowrap;
+    color: #fff;
+    background-color: #8c6fe9;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.games-name:hover{
+    color:#9919cf
+}
+/*************************************************games-by-tag********************************************************/
+
+.games-by-tag-baner-text{
+    background-image: url(../img/games-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.games-by-tag-baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*************************************************About********************************************************/
+.about-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 10;
+}
+.about-main-subtitle{
+    color: #fdeb9f;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+.about-baner-text{
+    background-image: url(../img/header-baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/******************About content****************/
+.mission{
+    padding: 20px 0 30px;
+}
+.misson-header{
+    color: #8c6fe9;
+}
+.mission-content{
+    display: flex;
+}
+.mission-text{
+    max-width: 50%;
+    width: 100%;
+    padding: 0 20px;
+}
+.mission-text h4{
+    color: #8c6fe9;
+}
+.mission-img-wrap{
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+.missiom-img{
+    width: 250px;
+    height: 205px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.about-advantages{
+    background-color: #fdeb9f;
+    padding: 20px 0 35px;
+}
+.about-advantages-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-advantages-header-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #8c6fe9;
+}
+.about-advantages-header-subtitle{
+    font-size: 20px;
+    color: #8c6fe9;
+    border-bottom: 2px solid #8c6fe9;
+    padding: 0 20px 15px 20px;
+}
+.about-advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.about-advantages-item{
+    display: flex;
+    width: 25%;
+    margin: 15px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.about-advantages-img{
+    width: 150px;
+}
+.about-advantages-item-content{
+    margin: 0 15px;
+    text-align: center;
+}
+.about-advantages-item-title{
+    color: #8c6fe9;
+}
+.about-advantages-item-title span{
+    font-size: 40px;
+    color: #9919cf;
+}
+
+
+
+
+
+
+.about-contact-section {
+  padding: 20px 0 30px;
+}
+
+.about-contact-title {
+  text-align: center;
+  color: #8c6fe9;
+}
+
+.about-contact-content{
+    display: flex;
+}
+.about-contact-img{
+    width: 40%;
+    max-height: 30vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-contact-form {
+  width: 55%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+}
+
+.about-form-group input,
+.about-form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.about-form-group input:focus,
+.about-form-group textarea:focus {
+  border-color: #9919cf;
+  outline: none;
+}
+
+.about-submit-btn {
+  background-color: #8c6fe9;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-submit-btn:hover {
+  background-color: #9919cf;
+}
+/*************************************************contact********************************************************/
+.contact-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 10;
+}
+.contact-main-subtitle{
+    color: #fdeb9f;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+.contact-baner-text{
+    background-image: url(../img/contacts-baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/***********************contact-form*******************/
+
+.contact-section {
+  padding: 20px 0 30px;
+}
+
+.contact-title {
+  text-align: center;
+  color: #8c6fe9;
+}
+
+.contact-content{
+    display: flex;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border: 2px solid #8c6fe9;
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #9919cf;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #8c6fe9;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #9919cf;
+}
+/***********************contact-info*******************/
+.contact{
+    padding: 30px 0;
+}
+.contact-img{
+    max-width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-info-img{
+    width: 80px;
+}
+.contact-info-item{
+    display: flex;
+    align-items: center;
+}
+.contact-info-item-text{
+    display: flex;
+    flex-direction: column;
+}
+.contact-info-item-text span{
+    font-weight: 700;
+}
+.contact-info-item-text a{
+    color: #8c6fe9;
+}
+.contact-info-item-text a:hover{
+    color: #9919cf;
+}
+/*************************************************poradi-logopeda********************************************************/
+.blog-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 10;
+}
+.blog-main-subtitle{
+    color: #fdeb9f;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10;
+}
+.blog-baner-text{
+    background-image: url(../img/articles-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blog-baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**************poradi-logopeda****************/
+.blog-articles{
+    padding: 30px 0;
+}
+.blog-articles-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog-articles-item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.blog-articles-img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.blog-articles-title{
+    margin: 10px 0 0;
+    color: #8c6fe9;
+}
+.blog-articles-title:hover{
+    color: #9919cf;
+}
+.blog-articles-author-link{
+    color: #8c6fe9;
+}
+.blog-articles-author-link:hover{
+    color: #9919cf;
+}
+.blog-articles-description{
+    margin: 10px 0;
+}
+.blog-articles-tag{
+    white-space: nowrap;
+    color: #fff;
+    background-color: #8c6fe9;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.blog-articles-link{
+    border: 2px solid #8c6fe9;
+    border-radius: 15px;
+    color: #8c6fe9;
+    padding: 10px 15px;
+    margin: 20px auto 0 0;
+}
+.blog-articles-link:hover{
+    border: 2px solid #9919cf;
+    color: #9919cf;
+}
+/*************************************************author-page********************************************************/
+.author-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 10;
+}
+.author-baner-text{
+    background-image: url(../img/yahmurdzhy-anna-header-baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/******************author-page********************/
+.author{
+    padding: 30px 0;
+}
+.author-header{
+    color: #8c6fe9;
+    margin-top: 0;
+}
+.author-content{
+    display: flex;
+}
+.author-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 20px;
+}
+.author-info-list{
+    margin-bottom: 20px;
+}
+.author-info-item span{
+    color: #8c6fe9;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.author-img-wrap{
+    width: 40%;
+}
+.author-img{
+    border-radius: 20px;
+}
+.author-img-2{
+    border-radius: 20px;
+}
+
+.author-contact-info-item{
+    display: flex;
+    align-items: center;
+}
+.author-contact-info-item-text{
+    display: flex;
+    flex-direction: column;
+}
+.author-contact-info-item-text span{
+    font-weight: 700;
+}
+.author-contact-info-item-text a{
+    color: #8c6fe9;
+}
+.author-contact-info-item-text a:hover{
+    color: #9919cf;
+}
+.author-contact-info-img{
+    width: 80px;
+}
+.author-bio{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.author-bio-content{
+    width: 60%;
+}
+.author-specialties-header{
+    color: #8c6fe9;
+}
+.author-achievements-header{
+    color: #8c6fe9;
+}
+.author-achievements-img-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.author-achievements-img{
+    width: 24%;
+    margin: 10px;
+    border: solid 5px #8c6fe9;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.author-articles-header{
+    color: #8c6fe9;
+}
+.author-articles-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.author-articles-item{
+    width: 30%;
+}
+.author-articles-img{
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 30px;
+}
+.author-articles-img-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.author-articles-img-link:hover .author-articles-img {
+  transform: scale(1.1);
+  filter: brightness(60%);
+}
+.author-articles-name{
+    text-align: center;
+    color: #8c6fe9;
+}
+.author-articles-name:hover{
+    color: #9919cf;
+}
+.author-all-articles-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.author-all-articles-link{
+    display: inline-block;
+    border: 2px solid #8c6fe9;
+    border-radius: 20px;
+    padding: 15px 70px;
+    margin: 20px 0;
+    color: #8c6fe9;
+    font-size: 20px;
+    font-weight: 700;
+}
+.author-all-articles-link:hover{
+    border: 2px solid #9919cf;
+    color: #9919cf;
+}
+/*************************************************blog-page********************************************************/
+.post-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+.post-main-subtitle{
+    display: block;
+    color: #fdeb9f;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+.post-baner-text{
+    background-image: url(../img/article-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/******************breadcrambs****************/
+.breadcrumbs{
+    padding: 20px 0;
+}
+.breadcrumbs-list{
+    display: flex;
+}
+.breadcrumbs-item{
+    list-style: none;
+}
+.breadcrumbs-item:nth-child(n+2):before{
+    content: ">";
+    display: inline-block;
+    margin: 0 8px;
+    color: #9919cf;
+}
+.breadcrumbs-link span{
+    color: #8c6fe9;
+    font-size: 14px;
+}
+/******************post content****************/
+.post-page-content{
+    padding-bottom: 35px;
+}
+.post-date p {
+    font-style: italic;
+}
+.post-author p{
+    font-style: italic;
+}
+.post-sidebar-header{
+    text-transform: uppercase;
+    color: #fdeb9f;
+}
+.post-page-wrapper{
+    display: flex;
+}
+.post-sidebar{
+    max-width: 30%;
+    width: 100%;
+    position: relative;
+}
+.post-sidebar-content{
+    position: sticky;
+    top: 100px;
+    background-color: #8c6fe9;
+    padding: 5px 20px 20px 30px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.post-sidebar-category-list{
+    padding: 0;
+}
+.post-sidebar-category-item::marker{
+    color: #fdeb9f;
+}
+.post-sidebar-category-link{
+    color: #fdeb9f;
+}
+.post-sidebar-category-link:hover{
+    color: #9919cf;
+}
+.post-sidebar-subcategory-list{
+    padding-left: 40px;
+    margin: 10px 0;
+}
+.post-sidebar-subcategory-item{
+    margin: 5px 0;
+}
+.post-sidebar-subcategory-item::marker{
+    color: #fdeb9f;
+}
+.post-sidebar-subcategory-link{
+    color: #fdeb9f;
+}
+.post-sidebar-subcategory-link:hover{
+    color: #9919cf;
+}
+.posts{
+    max-width: 70%;
+    width: 100%;
+    padding: 5px 25px;
+}
+.post-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.post-content h2,h3,h4{
+    color: #8c6fe9;
+}
+.post-content ul li::marker, .post-content ol li::marker{
+    color: #8c6fe9;
+}
+.post-content p{
+    margin: 10px 0;
+}
+.post-content img{
+    margin: 15px 0;
+    border-radius: 20px;
+}
+/******************post tags****************/
+.post-tags-header{
+    text-transform: uppercase;
+    color: #8c6fe9;
+}
+.post-tags-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-tags-item{
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: #8c6fe9;
+    border-radius: 20px;
+    color: #fdeb9f;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.other-post-header{
+    text-transform: uppercase;
+    color: #8c6fe9;
+}
+/*************************************************game-page********************************************************/
+.game-baner-text{
+    background-image: url(../img/game-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game-baner-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 1;
+}
+.game-main-subtitle{
+    display: block;
+    color: #fdeb9f;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    z-index: 1;
+}
+.game-page-wrap{
+    padding-bottom: 30px;
+}
+.game-container{
+    position:relative; 
+    width:100%; 
+    aspect-ratio: 16 / 9;
+    margin: 10px auto;
+}
+.full-screen-btn{
+    display: block;
+    margin: 15px auto;
+    padding: 15px 100px;
+    color: #8c6fe9;
+    border: 2px solid #8c6fe9;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/******************game-info****************/
+.game-info{
+    margin-left: 10px;
+}
+.game-info-item::marker{
+    color: #8c6fe9;
+}
+.game-info-item span{
+    font-weight: 700;
+}
+.game-tags{
+    color: #9919cf;
+}
+
+/*************************************************posts-tags********************************************************/
+.posts-tags-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 1;
+}
+.posts-tags-main-subtitle{
+    display: block;
+    color: #fdeb9f;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    z-index: 1;
+}
+.posts-tags-baner-text{
+    background-image: url(../img/articles-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/****************posts-tags-content*********************/
+.posts-tags{
+    padding: 30px 0;
+}
+.posts-tags-content{
+    display: flex;
+    justify-content: center;
+}
+.posts-tags-list{
+    display: flex;
+    flex-direction: column;
+}
+.posts-tags-item{
+    list-style: none;
+}
+.posts-tags-link{
+    font-size: 50px;
+    color: #8c6fe9;
+}
+.posts-tags-link:hover{
+    color: #9919cf;
+    text-decoration: underline;
+}
+/*************************************************games-tags********************************************************/
+.games-tags-main-title{
+    color: #fdeb9f;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 1;
+}
+.games-tags-main-subtitle{
+    display: block;
+    color: #fdeb9f;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    z-index: 1;
+}
+.games-tags-baner-text{
+    background-image: url(../img/games-page-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/****************games-tags-content*********************/
+.games-tags{
+    padding: 30px 0;
+}
+.games-tags-content{
+    display: flex;
+    justify-content: center;
+}
+.games-tags-list{
+    display: flex;
+    flex-direction: column;
+}
+.games-tags-item{
+    list-style: none;
+}
+.games-tags-link{
+    font-size: 50px;
+    color: #8c6fe9;
+}
+.games-tags-link:hover{
+    color: #9919cf;
+    text-decoration: underline;
+}
+
+
+
+
+
+/************************ Media **************************/
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    .main-subtitle{
+        font-size: 4vw;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .blog-articles-item{
+        width: 48%;
+        align-items: center;
+    }  
+    .blog-articles-link{
+    margin: 20px 0;
+    }
+    .about-advantages-item{
+        width: 50%;
+    }
+    .post-sidebar{
+        max-width: 40%;
+    }
+    .posts{
+        max-width: 60%;
+    }
+    .author-achievements-img{
+        width: 44%;
+    }
+    .games-tags-main-title, .posts-tags-main-title{
+        font-size: 43px;
+    }
+    .games-item{
+        width: 47%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    header.sticky .social{
+        display: flex;
+    }
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        height: 60%;
+    }
+
+    .menu {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #8c6fe9;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: -1;
+        }
+   
+    label.burger {
+        width: 38px;
+        height: 20px;
+        position: relative;
+        }
+    label div {
+        width: 100%;
+        height: 4px;
+        background: #fdeb9f;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 99px;
+        transition: 0.3s;
+        transform: scale(1);
+    }
+    label div:nth-child(1) {
+        top: 0;
+    }
+    label div:nth-child(2) {
+        top: 50%;
+    }
+    label div:nth-child(3) {
+        top: 100%;
+    }
+
+    input:checked + header nav {
+        height: 60vh;
+    }
+    input:checked + header label div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    input:checked + header label div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+    input:checked + header label div:nth-child(2) {
+        transform: scale(0);
+        opacity: 0;
+    }
+    .articles{
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-item{
+        width: 85%;
+        margin-top: 20px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    /* ***************************************** */
+    .games-page-wrapper{
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .mob-sidebar{
+        display: block;
+    }
+    .games{
+        max-width: none;
+    }
+    .games-item{
+        width: 47%;
+    }
+    /* ******************************************* */
+    .post-page-wrapper{
+        flex-direction: column;
+    }
+    .post-sidebar{
+        max-width: none;
+    }
+    .posts{
+        max-width: none;
+    }
+    /* ********************************************* */
+    .about-contact-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-contact-img{
+        width: 90%;
+        max-height: 43vh;
+    }
+    .about-contact-form{
+        width: 90%;
+    }
+    /* ******************************************** */
+    .author-articles-item{
+        width: 44%;
+    }
+    /* ****************************************** */
+    .games-tags-main-title, .posts-tags-main-title{
+        font-size: 38px;
+    }
+    .games-tags-link, .posts-tags-link{
+        font-size: 45px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .category-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-item{
+        width: 75%;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-logo{
+        width: 250px;
+    }
+    .footer-menu-list{
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-contacts{
+        align-items: center;
+    }
+    .footer-privacy-policy{
+        align-items: center;
+    }
+    .all-articles-link{
+        padding: 15px 50px;
+    }
+    .advantages-item{
+        flex-direction: column;
+    }
+    /* ********************************************* */
+
+    .blog-main-title{
+        font-size: 27px;
+    } 
+    .blog-main-subtitle{
+        font-size: 14px;
+    }
+    .blog-articles-item{
+        width: 100%;
+    } 
+    .blog-articles-link{
+        margin: 20px 0;
+    }
+    /* ********************************************* */
+    .about-main-subtitle{
+        font-size: 15px;
+    }
+    .about-main-title{
+        font-size: 40px;
+    }
+    .mission-content{
+        flex-direction: column;
+    }
+    .mission-text{
+        max-width: 100%;
+    }
+    .mission-img-wrap{
+        max-width: 100%;
+    }
+    .missiom-img{
+        width: 44%;
+        height: 150px;
+    }
+    .about-advantages-item{
+        width: 100%;
+    }
+    /* ***************************************** */
+    .contact-main-title{
+        font-size: 38px;
+    }
+    .contact-main-subtitle{
+        font-size: 16px;
+    }
+    .contact-info{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact-img{
+        max-width: 90%;
+    }
+    /* ************************************* */
+    .games-main-title{
+        font-size: 35px;
+    }
+    .games-main-subtitle{
+        font-size: 16px;
+    }
+    .games-item{
+        width: 100%;
+    }
+    /* ************************************* */
+    .post-main-title{
+        font-size: 40px;
+    }
+        /* ************************************* */
+    .author-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .author-bio{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .author-info{
+        width: 90%;
+    }
+    .author-img-wrap{
+        width: 90%;
+    }
+    .author-bio-content{
+        width: 90%;
+    }
+    .author-achievements-img{
+        width: 85%;
+    }
+    .author-articles-item{
+        width: 90%;
+    }
+    /* ************************************* */
+    .games-tags-link, .posts-tags-link{
+        font-size: 38px;
+    }
+    /* ************************************** */
+    .game-main-title{
+        font-size: 34px;
+    }
+    .all-games-link{
+        font-size: 14px;
+    }
+}

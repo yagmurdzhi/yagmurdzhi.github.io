@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+  <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="j3OVcOATJkgNsckl/BD1nw" async></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--My Style-->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <title>{{ title }} | LogoSpace</title>
+    {# Мета описание #}
+  {% if description %}
+    <meta name="description" content="{{ description }}. Більше логопедичних онлайн ігор на сайті LogoSpace">
+  {% endif %}
+  
+  {# Канонический URL #}
+    <link rel="canonical" href="{{ site.url }}">
+</head>
+<body>
+  {% include "header.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/games.js"></script>
+
+</body>
+</html>

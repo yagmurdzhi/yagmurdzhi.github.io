@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: Поради логопеда | LogoSpace
+description: Поради для батьків від логопедів. Дізнайтесь більше про розвиток мовлення вашої дитини та вчасно зверніться за допомогою
+pagination:
+  data: collections.posts
+  size: 100
+  reverse: true
+permalink: "/poradi-logopeda/"
+---
+
+
+<!--------------- baner ------------------->
+
+<div class="blog-baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="blog-baner-text-content">
+            <h1 class="blog-main-title">Корисні матеріали для батьків та педагогів</h1>
+            <span class="blog-main-subtitle">Рекомендації, техніки, вправи та багато іншого від наших логопедів</span>
+        </div>
+    </div>
+</div>
+
+<!--------------- Blog ------------------->
+
+<div class="blog-articles">
+    <div class="container">
+        <div class="blog-articles-list">
+        {% for post in pagination.items %}
+            <div class="blog-articles-item">
+                <a href="{{ post.url }}"><img src="/img/articles-img/{{ post.data.img }}" alt="{{ post.data.title }}" class="blog-articles-img"></a>
+                <a href="{{ post.url }}"><h3 class="blog-articles-title">{{ post.data.title }}</h3></a>
+                <div class="blog-articles-author">
+                    <span>Автор статті: </span><a class="blog-articles-author-link" href="/{{ post.data.author }}/">{{ post.data.visibleauthor }}</a>
+                </div>
+                <p class="blog-articles-description">{{ post.data.description }}</p>
+                <div class="blog-articles-tags">
+                {% for tag in post.data.tags %}
+                    <a href="/tags/{{ tag | slug }}/" class="blog-articles-tag">{{ tag }}</a> {% if not loop.last %} {% endif %}
+                {% endfor %}
+                </div>
+                <a href="{{ post.url }}" class="blog-articles-link">Переглянути статтю</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

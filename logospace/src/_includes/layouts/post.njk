@@ -1,0 +1,133 @@
+---
+layout: base.njk
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ url }}"
+  },
+  "headline": "{{ title | escape }}",
+  "description": "{{ description | escape }}",
+  {% if img %}
+  "image": "{{ site.url }}/img/articles-img/{{ img }}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ visibleauthor }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/img/logo.png"
+    }
+  },
+  "datePublished": "{{ post.data.date }}",
+  "dateModified": "{{ post.data.date }}",
+  "keywords": [{% for tag in tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+}
+</script>
+
+
+<!--------------- baner ------------------->
+
+<div class="post-baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1 class="post-main-title">{{ title }}</h1>
+        <span class="post-main-subtitle">{{ description }}</span>
+    </div>
+</div>
+<!--------------- breadcrambs ------------------->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-content">
+            <ul class="breadcrumbs-list"
+                itemscope
+                itemtype="https://schema.org/BreadcrumbList">
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="/"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">Головна</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="/poradi-logopeda/"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">Поради логопеда</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="{{ url }}"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">{{ title }}</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+
+<div class="container">
+  <div class="post-tags">
+    <h3 class="post-tags-header">Категорії статті</h3>
+    <div class="post-tags-list">
+        {% for tag in tags %}
+          <a href="/tags/{{ tag | slug }}/" class="post-tags-item">{{ tag }}</a>{% if not loop.last %} {% endif %}
+        {% else %}
+          Нет тегов
+        {% endfor %}
+    </div>
+  </div>
+
+  <div class="other-post">
+    <h3 class="other-post-header">Інші статті</h3>
+    <div class="blog-articles-list">
+    {% for post in relatedPosts %}
+        <div class="blog-articles-item">
+            <a href="{{ post.url }}"><img src="/img/articles-img/{{ post.data.img }}" alt="{{ post.data.title }}" class="blog-articles-img"></a>
+            <a href="{{ post.url }}"><h3 class="blog-articles-title">{{ post.data.title }}</h3></a>
+            <div class="blog-articles-author">
+                <span>Автор статті: </span><a class="blog-articles-author-link" href="/{{ post.data.author }}/">{{ post.data.visibleauthor }}</a>
+            </div>
+            <p class="blog-articles-description">{{ post.data.description }}</p>
+            <div class="blog-articles-tags">
+              {% for tag in post.data.tags %}
+                      <a href="/tags/{{ tag | slug }}/" class="blog-articles-tag">{{ tag }}</a> {% if not loop.last %} {% endif %}
+              {% endfor %}
+            </div>
+            <a href="{{ post.url }}" class="blog-articles-link">Переглянути статтю</a>
+        </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

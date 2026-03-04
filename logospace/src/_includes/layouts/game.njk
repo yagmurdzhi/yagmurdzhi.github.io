@@ -1,0 +1,104 @@
+---
+layout: base-for-games.njk
+---
+
+<!--------------- baner ------------------->
+<div class="game-baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="game-baner-text-content">
+        <h1 class="game-main-title">{{ title }}</h1>
+        <span class="game-main-subtitle">{{ description }}</span>
+      </div>
+    </div>
+</div>
+
+<!--------------- breadcrambs ------------------->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-content">
+            <ul class="breadcrumbs-list"
+                itemscope
+                itemtype="https://schema.org/BreadcrumbList">
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="/"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">Головна</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="/games/"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">Ігри</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+
+                <li class="breadcrumbs-item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a href="{{ url }}"
+                       class="breadcrumbs-link"
+                       itemprop="item">
+                        <span itemprop="name">{{ title }}</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--------------- game-content -------------------->
+<div class="game-page-wrap">
+    <div class="container">
+        <div class="game-content">
+            <div id="game-container" class="game-container">
+                <iframe 
+                    id="game-frame"
+                    src="/games-code/{{ gamefolder }}"
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <button class="full-screen-btn" onclick="openFullscreen()">На весь екран</button>
+            <div class="game-info">
+                <ul class="game-info-list">
+                    <li class="game-info-item"><span>Назва гри: </span>{{ title }}</li>
+                    <li class="game-info-item"><span>Ціль: </span> {{ target }}</li>
+                    <li class="game-info-item"><span>Теги: </span>
+                      {% for tag in tags %}
+                        <a class="game-tags" href="/games-tags/{{ tag | slug }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                      {% else %}
+                        Нет тегов
+                      {% endfor %}
+                    </li>
+                </ul>
+            </div>
+            <article>
+              {{ content | safe }}
+            </article>
+            <a class="all-games-link" href="/games/">← Назад до всіх ігор</a>
+        </div>
+    </div>
+</div>
+
+
+
+

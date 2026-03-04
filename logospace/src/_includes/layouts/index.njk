@@ -1,0 +1,250 @@
+---
+title: Логопедичний сайт з онлайн іграми LogoSpace
+description: LogoSpace — це український логопедичний сайт для дітей та логопедів, створений для підтримки мовленнєвого розвитку дітей різного віку з логопедичними онлайн іграми
+layout: base.njk
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "LogoSpace",
+      "url": "{{ site.url }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/img/logo.png"
+      },
+      "sameAs": [
+        "https://www.instagram.com/anna.logoped_/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "LogoSpace",
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.url }}/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}/#homepage",
+      "url": "{{ site.url }}/",
+      "name": "Логопедичний сайт з онлайн іграми LogoSpace",
+      "description": "Український логопедичний сайт з інтерактивними онлайн іграми та корисними порадами для розвитку мовлення у дітей.",
+      "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+      },
+      "about": {
+        "@id": "{{ site.url }}/#organization"
+      }
+    }
+  ]
+}
+</script>
+
+<!--------------- baner ------------------->
+
+<div class="baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="baner-text-content">
+            <h1 class="main-title">LogoSpace</h1>
+            <span class="main-subtitle">Цікаві логопедичні ігри для дітей</span>
+        </div>
+    </div>
+</div>
+
+<!--------------- category ------------------->
+
+<div class="category">
+    <div class="container">
+        <h2 class="category-header">Логопедичні онлайн ігри</h2>
+        <div class="category-content">
+            <div class="category-item">
+                <a class="category-img-link" href="/games-tags/malyukam/"><img class="category-img" src="img/game-prev-1.jpg" alt="Малюкам"></a>
+                <a class="category-name-link" href="/games-tags/malyukam/"><h3 class="category-name">Малюкам</h3></a>
+            </div>
+            <div class="category-item">
+                <a class="category-img-link" href="/games-tags/avtomatizaciya-zvuka/"><img class="category-img" src="img/game-prev-2.jpg" alt="Автоматизація звуків"></a>
+                <a class="category-name-link" href="/games-tags/avtomatizaciya-zvuka/"><h3 class="category-name">Автоматизація звуків</h3></a>
+            </div>
+            <div class="category-item">
+                <a class="category-img-link" href="/games-tags/fonematichnij-sluh/"><img class="category-img" src="img/game-prev-3.jpg" alt="Фонематичний слух"></a>
+                <a class="category-name-link" href="/games-tags/fonematichnij-sluh/"><h3 class="category-name">Фонематичний слух</h3></a>
+            </div>
+            <div class="category-item">
+                <a class="category-img-link" href="/games-tags/uvagapam'yatlogika/"><img class="category-img" src="img/game-prev-4.jpg" alt="Підготовка до читання і письма"></a>
+                <a class="category-name-link" href="/games-tags/uvagapam'yatlogika/"><h3 class="category-name">Увага/пам'ять/логіка</h3></a>
+            </div>
+            <div class="category-item">
+                <a class="category-img-link" href="/games-tags/slovnikovij-zapas/"><img class="category-img" src="img/game-prev-5.jpg" alt="Лексика і граматика"></a>
+                <a class="category-name-link" href="/games-tags/slovnikovij-zapas/"><h3 class="category-name">Словниковий запас</h3></a>
+            </div>
+        </div>
+        <div class="all-games-btn">
+            <a class="all-games-link" href="/games/">Усі ігри</a>
+        </div>
+    </div>
+</div>
+
+<!--------------- advantages ------------------->
+
+<div class="advantages">
+    <div class="container">
+        <div class="advantages-header">
+            <h2 class="advantages-header-title">Як ми допомагаємо</h2>
+            <p class="advantages-header-subtitle">Як сайт допомагає вашій дитині говорити краще?</p>
+        </div>
+        <div class="advantages-blok">
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <img class="advantages-img" src="img/icons8-abc-100.png" alt="Індивідуальний підхід">
+                    <div class="advantages-item-content">
+                        <h3 class="advantages-item-title">Індивідуальний підхід</h3>
+                        <p class="advantages-item-text">Кожна дитина унікальна, тому ігри та вправи підлаштовуються під рівень мовного розвитку, темп навчання та особливості сприйняття. Це дозволяє досягати результатів швидше й без стресу.</p>
+                    </div>
+                </li>
+                <li class="advantages-item">
+                    <img class="advantages-img" src="img/icons8-xbox-контроллер-100.png" alt="Ігрова форма занять">
+                    <div class="advantages-item-content">
+                        <h3 class="advantages-item-title">Ігрова форма занять</h3>
+                        <p class="advantages-item-text">Навчання перетворюється на захопливу гру: діти не просто виконують завдання, а проходять рівні, збирають бали й отримують позитивні емоції. Такий підхід підвищує мотивацію та залученість у процес.</p>
+                    </div>
+                </li>
+                <li class="advantages-item">
+                    <img class="advantages-img" src="img/icons8-учитель-100.png" alt="Рекомендації від логопедів">
+                    <div class="advantages-item-content">
+                        <h3 class="advantages-item-title">Рекомендації від логопедів</h3>
+                        <p class="advantages-item-text">Ігри розроблено у співпраці з кваліфікованими логопедами, тож вони відповідають методичним вимогам і враховують практичні аспекти корекційної роботи. Батьки можуть бути впевнені в якості матеріалу.</p>
+                    </div>
+                </li>
+                <li class="advantages-item">
+                    <img class="advantages-img" src="img/icons8-главная-144.png" alt="Підходить для домашнього навчання">
+                    <div class="advantages-item-content">
+                        <h3 class="advantages-item-title">Підходить для домашнього навчання</h3>
+                        <p class="advantages-item-text">Платформа доступна з будь-якого пристрою — не потрібно їхати в центр чи чекати фахівця. Достатньо кількох хвилин на день вдома, щоб побачити помітний прогрес у мовленні.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--------------- blog ------------------->
+
+<div class="blog">
+    <div class="container">
+        <div class="blog-header">
+            <h2 class="blog-header-title">Корисні поради від логопеда</h2>
+            <p class="blog-header-subtitle">Читаємо корисні поради для розвитку мови дитини та застосовуємо на практиці!</p>
+        </div>
+        <div class="articles">
+        {% for post in latestPosts %}
+            <div class="articles-item">
+                <a class="articles-img-link" href="{{ post.url }}"><img class="articles-img" src="/img/articles-img/{{ post.data.img }}" alt="Автоматизація звуків"></a>
+                <a class="articles-name-link" href="{{ post.url }}"><h3 class="articles-name">{{ post.data.title }}</h3></a>
+                <p class="articles-description">{{ post.data.description }}</p>
+            </div>
+        {% endfor %}
+        </div>
+        <div class="all-articles-btn">
+            <a class="all-articles-link" href="/poradi-logopeda/">Більше корисних порад</a>
+        </div>
+    </div>
+</div>
+
+<!--------------- reviews ----------------->
+
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-header">
+        <h2 class="reviews-header-title">Відгуки</h2>
+        <p class="reviews-header-subtitle">Що кажуть батьки, після використання сайту</p>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <p class="review-text">"Ігри дуже сподобались моїй донечці! Весело і з користю. Дякуємо!"</p>
+          <div class="review-author"><span>— Марина, мама 4-річної Софійки</span></div>
+        </div>
+        <div class="slide">
+          <p class="review-text">"Син навчився правильно вимовляти «р» саме завдяки цим іграм. Рекомендуємо!"</p>
+          <div class="review-author"><span>— Олександр, тато Максима, 6 років</span></div>
+        </div>
+        <div class="slide">
+          <p class="review-text">"Зручно, цікаво, і що головне — дитина займається із задоволенням!"</p>
+          <div class="review-author"><span>— Інна, мама Тимофія</span></div>
+        </div>
+        <div class="slide">
+          <p class="review-text">"Нарешті логопедія без сліз! Донька сприймає заняття як гру."</p>
+          <div class="review-author"><span>— Катерина, мама Вікторії</span></div>
+        </div>
+        <div class="slide">
+          <p class="review-text">"Ідеальний варіант для занять вдома. Простий сайт і гарний результат."</p>
+          <div class="review-author"><span>— Юлія, мама Артема</span></div>
+        </div>
+        <div class="slide">
+          <p class="review-text">“Мені як логопеду це дуже корисно!”</p>
+          <div class="review-author"><span>— Ірина</span></div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="prev">←</button>
+        <button class="next">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------- site-description ------------------->
+
+<div class="site-description">
+    <div class="container">
+        <h2 class="site-description-header">LogoSpace — український логопедичний сайт для дітей та батьків</h2>
+<p><strong>LogoSpace</strong> — це <strong>український логопедичний сайт</strong>, створений для підтримки мовленнєвого розвитку дітей різного віку. Ми об’єднали в одному просторі сучасні інтерактивні ігри та практичні поради від фахівців, щоб допомогти батькам займатися з дитиною вдома. Наш ресурс стане у пригоді і для тих, хто лише починає знайомство з логопедичними вправами, і для тих, хто вже має досвід занять.</p>
+<p>Якщо ви шукаєте надійний <strong>логопедичний сайт</strong>, де поєднуються навчання та гра, LogoSpace стане найкращим вибором. Ми пропонуємо ігри для розвитку мовлення, вправи для правильної вимови звуків, завдання на збагачення словникового запасу та тренування уваги й пам’яті. Усе це подано у зручній онлайн-формі, доступній з будь-якого пристрою.</p> <p>Над матеріалами працюють досвідчені <strong>логопеди</strong> та <strong>логопеди-дефектологи</strong>, які враховують особливості мовленнєвого розвитку дітей. Завдяки цьому контент відповідає сучасним методикам і підходить як для самостійних занять вдома, так і для додаткової практики під час роботи з фахівцем.</p> <p>Формат <strong>логопед онлайн</strong> дозволяє отримати рекомендації та підказки від спеціалістів без необхідності відвідувати кабінет. Це зручний інструмент для батьків, які хочуть займатися з дитиною у комфортних домашніх умовах, але при цьому орієнтуватися на професійні поради. Такий підхід допомагає зробити навчання системним і результативним.</p> <p>На <strong>українському логопедичному сайті LogoSpace</strong> ви знайдете: 
+  <ul>
+    <li>логопедичні ігри для розвитку мовлення</li>
+    <li>практичні логопедичні вправи для правильної вимови</li>
+    <li>матеріали для тренування пам’яті та уваги</li>
+    <li>поради для батьків щодо занять вдома</li>
+    <li>розвиваючі ігри для дітей онлайн</li>
+  </ul>
+  </p> 
+<p>LogoSpace поєднує навчання та гру, щоб зробити процес розвитку мовлення цікавим і результативним. Завдяки доступному інтерфейсу дитина може грати та вчитися самостійно або разом із батьками. Це робить наш сайт корисним і для сімей, і для педагогів, які шукають якісні матеріали для занять.</p>
+
+<h2 class="site-description-header">Логопедичні ігри онлайн</h2>
+<p><strong>Логопедичні ігри</strong> — це практичний інструмент, який допомагає дітям розвивати мовлення у доступній ігровій формі. Вони роблять навчання цікавим, формують правильну вимову, збагачують словниковий запас та розвивають мислення. На LogoSpace доступні <strong>логопедичні ігри онлайн</strong>, у які можна грати з будь-якого пристрою без додаткових програм. У нас зібрані логопедичні ігри для дітей різного віку — від дошкільнят до школярів.</p> <p>Кожна гра створена так, щоб дитина навчалася через гру, а батьки бачили реальний результат. <strong>Логопедичні ігри для дітей</strong> поєднують вправи на вимову, розвиток пам’яті, уваги та логіки. Особливу цінність мають логопедичні ігри для розвитку мовлення, які допомагають дитині краще будувати речення, вільно висловлювати думки й упевнено спілкуватися.</p> <p>Окрім цього, на LogoSpace доступні логопедичні ігри для розвитку розуміння мовлення, що формують навички слухового сприйняття та розширюють словниковий запас. Для дітей, які потребують додаткової підтримки, ми пропонуємо адаптовані <strong>логопедичні ігри для дітей онлайн</strong>, що враховують різні рівні підготовки.</p> <p>Наші матеріали побудовані за сучасними методиками, тому ігри логопедичні не лише цікаві, але й результативні. Завдяки інтерактивності дитина охоче виконує завдання, а <strong>розвиваючі логопедичні ігри</strong> роблять процес навчання захопливим. Саме тому LogoSpace пропонує лише перевірені та <strong>цікаві логопедичні ігри</strong>, які допомагають дітям розвивати мовлення в ігровій формі.</p>
+
+<h3 class="site-description-header">Популярні ігри на LogoSpace</h3>
+<p>На нашому сайті представлено багато різноманітних онлайн ігор, та є деякі, що користуються найбільшою популярністю серед дітей та батьків:</p>
+<ul>
+  <li><a href="/games-tags/zvuk-r/">Ігри для автоматизації звуку [р]</a></li>
+  <li><a href="/games-tags/zvuk-l/">Ігри для автоматизації звуку [л]</a></li>
+  <li><a href="/games-tags/zvuk-ch/">Ігри для автоматизації звуку [ч]</a></li>
+  <li><a href="/games-tags/zvuk-s/">Ігри для автоматизації звуку [с]</a></li>
+</ul>
+
+
+<h2 class="site-description-header">Корисні статті про логопедію</h2>
+<p>Окрім інтерактивних ігор, LogoSpace пропонує розділ із матеріалами для батьків. Тут зібрані <strong>корисні статті про логопедію</strong>, які допомагають краще зрозуміти особливості розвитку мовлення та організувати заняття вдома. Усі тексти написані доступною мовою, щоб батьки могли легко застосовувати поради на практиці.</p> <p>У статтях ви знайдете рекомендації від <strong>логопеда-дефектолога</strong>, вправи для правильної вимови та поради щодо використання ігрового формату у навчанні. Окремо висвітлюються теми:
+  <a href="#">розвиток зв’язного мовлення</a>, <a href="#">методики для дошкільнят</a>, <a href="#">онлайн-заняття</a>, а також <a href="#">ігри для розвитку пам’яті та уваги</a>.</p> <p>Найбільш популярні серед батьків такі напрямки: — <a href="#">логопедичні вправи для дітей вдома</a>, — <a href="#">ігри для розвитку мовлення</a>, — <a href="#">поради з формування правильної вимови</a>, — <a href="#">методики логопеда онлайн</a>. </p>
+
+<p>Ці матеріали стануть підтримкою для тих, хто прагне допомогти дитині у розвитку мовлення. Використовуючи <strong>логопедичні ігри онлайн</strong> разом із практичними порадами з блогу, ви отримаєте комплексний підхід, який дає швидкі та помітні результати.</p> 
+
+<h2 class="site-description-header">Почніть прямо зараз</h2>
+<p>Не чекайте — розвиток мовлення дитини можна почати вже сьогодні. На <strong>українському логопедичному сайті LogoSpace</strong> доступні <strong>логопедичні ігри онлайн</strong>, та практичні статті від досвідчених логопедів і логопедів-дефектологів. </p> <p>Обирайте розвиваючі логопедичні ігри, проходьте логопедичні ігри та вправи, читайте корисні статті про логопедію та інтегруйте їх у щоденні заняття з дитиною. Завдяки інтерактивності та ігровому формату процес навчання стає цікавим і результативним.</p> <p>Почніть займатися зараз і забезпечте своїй дитині правильний розвиток мовлення, цікаве навчання та впевненість у спілкуванні. <strong>Логопедичні ігри для дітей онлайн</strong> на LogoSpace зроблять процес навчання захопливим та ефективним.</p>
+
+</div>

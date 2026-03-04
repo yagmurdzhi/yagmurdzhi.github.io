@@ -1,0 +1,73 @@
+/*! modern-normalize | MIT License | */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+/* *************************** */
+ul li::marker, ol li::marker{
+    color: #8c6fe9;
+}
+
+/* Improve media defaults */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*-------------------My Defolt Style--------------------------*/
+*{
+    color: #444;
+    font-family: "Nunito", sans-serif;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 33px;
+}
+h3{
+    font-size: 25px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}

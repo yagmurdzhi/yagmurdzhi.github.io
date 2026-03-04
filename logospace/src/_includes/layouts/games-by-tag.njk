@@ -1,0 +1,76 @@
+---
+title: Логопедичні онлайн ігри за темою -
+description: Логопедичні ігри онлайн для занять вдома та з логопедом за темою -
+layout: base.njk
+---
+{% set title = "Ігри по темі: " ~ tag %}
+{% set description = "Логопедичні онлайн ігри для занять вдома та з логопедом за темою " ~ tag %}
+
+<!--------------- baner ------------------->
+
+<div class="games-by-tag-baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="games-by-tag-baner-text-content">
+        <h1 class="games-main-title">Ігри по темі: {{ tag }}</h1>
+        <span class="games-main-subtitle">Логопедичні онлайн ігри для занять вдома та з логопедом за темою {{ tag }}</span> 
+      </div>
+    </div>
+</div>
+
+<!--------------- Games content ------------------->
+<div class="mob-sidebar" id="mob-sidebar">
+  <div class="mob-sidebar-content">
+    <h4 class="mob-sidebar-header">Логопедичні ігри: усі теги</h4>
+    <ul class="mob-sidebar-category-list">
+    {% for tag in collections.gameTags %}
+      <li class="mob-sidebar-category-item">
+          <a class="mob-sidebar-category-link" href="/games-tags/{{ tag | slugify }}/">{{ tag }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="games-page-content">
+  <div class="container">
+    <div class="games-page-wrapper">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <h4 class="sidebar-header">Логопедичні ігри по іншим темам</h4>
+          <ul class="sidebar-category-list">
+          {% for tag in collections.gameTags %}
+            <li class="sidebar-category-item">
+                <a class="sidebar-category-link" href="/games-tags/{{ tag | slugify }}/">{{ tag }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="games">
+        <div class="games-content">
+        {% for game in collections.games %}
+          {% if game.data.tags and tag in game.data.tags %}
+            <div class="games-item">
+                <a class="games-img-link" href="{{ game.url }}"><img class="games-img" src="/img/games-img/{{ game.data.img }}" alt="{{ game.data.title }}"></a>
+                <a class="games-name-link" href="{{ game.url }}"><h3 class="games-name">{{ game.data.title }}</h3></a>
+                <p class="games-description">{{ game.data.description }}</p>
+                {% for tag in game.data.tags %}
+                  <a class="game-tag" href="/games-tags/{{ tag | slug }}/">{{ tag }}</a>{% if not loop.last %} {% endif %}
+                {% endfor %}
+            </div>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const mobSidebar = document.getElementById('mob-sidebar');
+
+mobSidebar.addEventListener('click', function() {
+    mobSidebar.classList.toggle('active');
+});
+</script>

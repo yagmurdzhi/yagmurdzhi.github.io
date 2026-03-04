@@ -1,0 +1,28 @@
+---
+layout: base.njk
+permalink: /games-tags/
+---
+
+<!--------------- baner ------------------->
+
+<div class="games-tags-baner-text">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1 class="games-tags-main-title">Усі теми логопедичних ігор онлайн</h1>
+        <span class="games-tags-main-subtitle">Ознайомтесь з усіма темами логопедичних ігор, які представлені на нашому сайті, та обіріть відповідну для ваших занять.</span>
+    </div>
+</div>
+
+<!--------------- content -------------------->
+
+<div class="games-tags">
+    <div class="container">
+        <div class="games-tags-content">
+            <ul class="games-tags-list">
+              {% for tag in collections.gameTags %}
+                <li class="games-tags-item"><a href="/games-tags/{{ tag | slugify }}/" class="games-tags-link">{{ tag }}</a></li>
+               {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+---
+title: Статті за темою -
+description: Дізнайтеся, як навчити дитину правильно вимовляти звуки, ефективні вправи для дому, та поради досвідчених логопедів на тему -
+layout: base.njk
+---
+
+<!--------------- baner ------------------->
+
+<div class="blog-baner-text">
+    <div class="overlay"></div>
+    <h1 class="blog-main-title">Статті з тегом: {{ tag }}</h1>
+</div>
+
+
+<!--------------- Blog ------------------->
+
+<div class="blog-articles">
+    <div class="container">
+        <div class="blog-articles-list">
+        {% for post in collections.posts %}
+        {% if post.data.tags and tag in post.data.tags %}
+            <div class="blog-articles-item">
+                <a href="{{ post.url }}"><img src="/img/articles-img/{{ post.data.img }}" alt="{{ post.data.title }}" class="blog-articles-img"></a>
+                <a href="{{ post.url }}"><h3 class="blog-articles-title">{{ post.data.title }}</h3></a>
+                <div class="blog-articles-author">
+                    <span>Автор статті: </span><a class="blog-articles-author-link" href="/{{ post.data.author }}/">{{ post.data.visibleauthor }}</a>
+                </div>
+                <p class="blog-articles-description">{{ post.data.description }}</p>
+                <div class="blog-articles-tags">
+                {% for tag in post.data.tags %}
+                    <a href="/tags/{{ tag | slug }}/" class="blog-articles-tag">{{ tag }}</a> {% if not loop.last %} {% endif %}
+                {% endfor %}
+                </div>
+                <a href="{{ post.url }}" class="blog-articles-link">Переглянути статтю</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

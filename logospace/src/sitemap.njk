@@ -1,0 +1,79 @@
+---
+title: "Карта сайту"
+description: "Повна карта сайту з усіма сторінками, статтями та іграми"
+layout: base.njk
+permalink: "/sitemap/"
+---
+
+<h1>Карта сайту</h1>
+
+{# ======= ОСНОВНІ СТОРІНКИ  ======== #}
+<section>
+  <h2>Основні сторінки</h2>
+  <ul>
+    {% for page in collections.all %}
+      {% if page.url
+        and page.data.title
+        and not page.data.tags
+        and not page.data.isGameTagPage
+        and not page.data.isPostTagPage
+        and not page.data.excludeFromSitemap %}
+        <li>
+          <a href="{{ page.url }}">{{ page.data.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+{# ==========  СТАТТІ  ======= #}
+<section>
+  <h2>Статті</h2>
+  <ul>
+    {% for post in collections.posts %}
+      {% if not post.data.excludeFromSitemap %}
+        <li>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+{# ======= ІГРИ ===== #}
+<section>
+  <h2>Ігри</h2>
+  <ul>
+    {% for game in collections.games %}
+      {% if not game.data.excludeFromSitemap %}
+        <li>
+          <a href="{{ game.url }}">{{ game.data.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+{# ========== ТЕГИ СТАТЕЙ ========= #}
+<section>
+  <h2>Теги статей</h2>
+  <ul>
+    {% for tag in collections.postTags %}
+      <li>
+        <a href="/tags/{{ tag | slug }}/">{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{# ======= ТЕГИ ІГОР  ===== #}
+<section>
+  <h2>Теги ігор</h2>
+  <ul>
+    {% for tag in collections.gameTags %}
+      <li>
+        <a href="/games-tags/{{ tag | slug }}/">{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

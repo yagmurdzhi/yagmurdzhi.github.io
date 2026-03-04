@@ -1,0 +1,82 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ site.url }}/#website",
+  "url": "{{ site.url }}/",
+  "name": "LogoSpace",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "LogoSpace",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/img/logo.png"
+    }
+  },
+  
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Головна",
+        "url": "{{ site.url }}/"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Ігри",
+        "url": "{{ site.url }}/games/"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Статті",
+        "url": "{{ site.url }}/poradi-logopeda/"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Автори",
+        "url": "{{ site.url }}/authors/"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Контакти",
+        "url": "{{ site.url }}/contacts/"
+      }
+    ]
+  }
+}
+</script>
+
+<!--------------- Nav ------------------->
+<input type="checkbox" id="mob-menu">
+<header class="header">
+    <div class="container">
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="/img/LogoSpace.gif" alt="Logo LogoSpace"></a>
+            </div>
+            <!--------------- mob Nav ------------------->
+            <label class="burger" for="mob-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!--------------- end mob Nav ------------------->
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link" href="/">Головна</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/games/">Ігри</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/poradi-logopeda/">Поради логопеда</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/about/">Про сайт</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/contacts/">Контакти</a></li>
+                </ul>
+                <div class="social">
+                    <a class="social-link" href="https://www.instagram.com/anna.logoped_/"><img class="social-logo" src="/img/Instagram_icon.png" alt="Instagram"></a>
+                    <a class="social-link" href="https://www.facebook.com/share/177vEcYhC8/"><img class="social-logo" src="/img/facebook-logo.png" alt="Facebook"></a>
+                    <a class="social-link" href="https://web.telegram.org/k/#@logospasegame"><img class="social-logo" src="/img/telegram-logo.png" alt="Telegram"></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
